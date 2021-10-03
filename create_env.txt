@@ -1,0 +1,14 @@
+<azure login>
+az login
+
+<install packages>
+pip install azure-identity
+pip install azure-keyvault-secrets
+
+<create resource & key vault>
+az group create --name KeyVault-PythonQS-rg --location eastasia
+az keyvault create --name Jwc --resource-group KeyVault-PythonQS-rg
+
+
+
+
